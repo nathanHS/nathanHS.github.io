@@ -44,7 +44,7 @@ type: "about"
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=350 height=86 src="http://music.163.com/outchain/player?type=2&id=386837&auto=0&height=66"></iframe>
 </center>
-
+hehehehe
 这是一个全新的阶段。姨父是一名大学教授，从小我**被传染**了很多他的言行。他曾对我说封建时候很多人都是很怕死的，他们总想留下些什么来让自己永存。`要么有所建树，要么把思想传下去。`
 
 `你有梦想吗？`那位记者朋友，曾经这样问过我。这一句话，让我想了很久也彻底把我从某个既定的轨道拉了出来。现在想想看，那本应就是一个**梦想的年龄**那个年龄的我也本应是在大概率里流淌的，但那份曾经对美好未来执着地追求对我来说真的能算上生命里珍贵的宝物。
