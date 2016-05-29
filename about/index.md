@@ -40,7 +40,9 @@ type: "about"
 东张西望，一无所长。
 四体不勤，五谷不分。
 文不能测字，武不能防身。
-{% endblockquote %} 
+{% endblockquote %}
+
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=350 height=86 src="http://music.163.com/outchain/player?type=2&id=386837&auto=0&height=66"></iframe>
 </center>
 
 这是一个全新的阶段。姨父是一名大学教授，从小我**被传染**了很多他的言行。他曾对我说封建时候很多人都是很怕死的，他们总想留下些什么来让自己永存。`要么有所建树，要么把思想传下去。`
