@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-05-30T10:38:57.000Z</updated>
+  <updated>2016-05-30T16:45:14.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -19,8 +19,8 @@
     <title>May30th</title>
     <link href="http://yoursite.com/2016/05/31/May30th/"/>
     <id>http://yoursite.com/2016/05/31/May30th/</id>
-    <published>2016-05-30T16:33:46.011Z</published>
-    <updated>2016-05-30T10:38:57.000Z</updated>
+    <published>2016-05-30T16:45:22.120Z</published>
+    <updated>2016-05-30T16:45:14.000Z</updated>
     
     <content type="html"><![CDATA[<p>不得不说才两三天就发生了很多事情。但是，我的闲暇时间确实越来越少还是就简要地记录一下吧。</p>
 <p>我给我们体系结构小组的成员分配任务，让他们做。的确他们都做了，也都完成了。但是最后我看到成品等于没有做，对这件事我觉得自己有些恼怒，但更多的是觉得自己做的太不到位只是简单的安排下去认为所有人都会重视<strong>认为所有人都是像自己想的一样，能够认真对待事情</strong>。</p>
@@ -47,7 +47,7 @@
       <category term="Personal" scheme="http://yoursite.com/categories/Personal/"/>
     
     
-      <category term="管理 反省" scheme="http://yoursite.com/tags/%E7%AE%A1%E7%90%86-%E5%8F%8D%E7%9C%81/"/>
+      <category term="-管理 -反省" scheme="http://yoursite.com/tags/%E7%AE%A1%E7%90%86-%E5%8F%8D%E7%9C%81/"/>
     
   </entry>
   
