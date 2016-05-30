@@ -86,7 +86,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Shell,Workerman," />
 
 
 
@@ -104,15 +104,25 @@
 
 
 
-<meta name="description" content="能让你认识我，真是一件幸运的事。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="kongKong's Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="为什么突然会想到写Shell其实，我在大二下学期开学的时候因为搬到了出租屋里住所以一个人就很有闲暇的时间，那个时候我就把兄弟连的Linxu基础全部看了一遍。（ 但是不得不说，当对软件的学习到达一个阶段以后再去通过看视频来学习，哪怕是入门都是一个效率极低的过程。 ）也就算是在那个时候真正的接触了Shell编程，我认为Shell有以下几种功能（为什么存在）：
+
+定期批量执行系统命令
+对文本或指令的输出">
+<meta property="og:type" content="article">
+<meta property="og:title" content="第一个Shell脚本">
+<meta property="og:url" content="http://yoursite.com/2016/05/31/第一个Shell脚本/index.html">
 <meta property="og:site_name" content="kongKong's Blog">
-<meta property="og:description" content="能让你认识我，真是一件幸运的事。">
+<meta property="og:description" content="为什么突然会想到写Shell其实，我在大二下学期开学的时候因为搬到了出租屋里住所以一个人就很有闲暇的时间，那个时候我就把兄弟连的Linxu基础全部看了一遍。（ 但是不得不说，当对软件的学习到达一个阶段以后再去通过看视频来学习，哪怕是入门都是一个效率极低的过程。 ）也就算是在那个时候真正的接触了Shell编程，我认为Shell有以下几种功能（为什么存在）：
+
+定期批量执行系统命令
+对文本或指令的输出">
+<meta property="og:updated_time" content="2016-05-30T18:07:19.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="kongKong's Blog">
-<meta name="twitter:description" content="能让你认识我，真是一件幸运的事。">
+<meta name="twitter:title" content="第一个Shell脚本">
+<meta name="twitter:description" content="为什么突然会想到写Shell其实，我在大二下学期开学的时候因为搬到了出租屋里住所以一个人就很有闲暇的时间，那个时候我就把兄弟连的Linxu基础全部看了一遍。（ 但是不得不说，当对软件的学习到达一个阶段以后再去通过看视频来学习，哪怕是入门都是一个效率极低的过程。 ）也就算是在那个时候真正的接触了Shell编程，我认为Shell有以下几种功能（为什么存在）：
+
+定期批量执行系统命令
+对文本或指令的输出">
 
 
 
@@ -130,7 +140,7 @@
   };
 </script>
 
-  <title> kongKong's Blog </title>
+  <title> 第一个Shell脚本 | kongKong's Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -151,9 +161,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -257,9 +265,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -279,10 +287,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2016/05/31/第一个Shell脚本/" itemprop="url">
-                  第一个Shell脚本
-                </a>
+                第一个Shell脚本
               
             
           </h1>
@@ -341,285 +346,75 @@
       
 
       
-        
-          
-          为什么突然会想到写Shell其实，我在大二下学期开学的时候因为搬到了出租屋里住所以一个人就很有闲暇的时间，那个时候我就把兄弟连的Linxu基础全部看了一遍。（ 但是不得不说，当对软件的学习到达一个阶段以后再去通过看视频来学习，哪怕是入门都是一个效率极低的过程。 ）也就算是在那个时候真正的接触了She
-          ...
+        <h2 id="为什么突然会想到写Shell"><a href="#为什么突然会想到写Shell" class="headerlink" title="为什么突然会想到写Shell"></a>为什么突然会想到写Shell</h2><p>其实，我在大二下学期开学的时候因为搬到了出租屋里住所以一个人就很有闲暇的时间，那个时候我就把兄弟连的Linxu基础全部看了一遍。（<strong> 但是不得不说，当对软件的学习到达一个阶段以后再去通过看视频来学习，哪怕是入门都是一个效率极低的过程。 </strong>）也就算是在那个时候真正的接触了Shell编程，我认为Shell有以下几种功能（为什么存在）：</p>
+<ul>
+<li>定期批量执行系统命令</li>
+<li>对文本或指令的输出进行分析并作为某些命令或可执行文件的输入</li>
+</ul>
+<p>不得不说，我知道Shell很强大可以省很多事情（<strong> 规律性的反复操作 </strong>）。但是因为，真的没有什么实际项目需求所以学完就忘，这也是我说的看视频的一个弊端。<br>    如果为了解决项目问题而去看视频，那必然浪费大量的时间而且没有搜索引擎灵活。而如果为了入门看视频，如果不配合笔记记录那么必定会因为短期内没有相关项目辅助熟练相关技能而造成知识点的快速遗忘。所以我认为<strong> 搜索引擎的使用比文档性价比高，文档的使用比视频性价比高。 </strong></p>
+<p>所以，很显然的我早就忘得一干二净了，除了会用<code>grep</code>了，其他的和大一上学期第一次接触Linux的时候没什么他大的区别。</p>
+<h2 id="重拾Workerman"><a href="#重拾Workerman" class="headerlink" title="重拾Workerman"></a>重拾<a href="http://www.workerman.net" target="_blank" rel="external">Workerman</a></h2><p>因为是我<strong>第一次</strong>被别的人邀请来做项目，我的心里特别的高兴，觉得自己钻研的东西终于有了价值。我就开始又一遍的再去看Workerman，不过这次我不再是看框架源码了。我开始直接看Demo与使用方法，所以毕竟是研究了很多次源码（虽然还是看不懂），觉得那些相关操作简直就是傻瓜化的（更好的证明这是一个极其优秀的框架）。</p>
+<p>我开始想原来顺跟学长的项目文件（因为我弄丢了），我记得原来他有两个Shell好像一个是关闭Redis，Memcache和Mysql服务的而另一个是开启服务的。执行两条命令，就可以做到6条命令的操作，简直太棒了。</p>
+<p>于是我想，我也可以在我的项目里写几个Shell来提高工作效率。</p>
+<p><em>*</em> 第一个，terminateProcess $1</p>
+<p>这个其实不是我写的，而是我百度到的。根据进程名杀进程，我想有了这个我再也不用去记那些查进程状态的命令和各种进程号了，:P 特别是在Xshell上Ctrl + V还粘贴不了得用别的快捷键。</p>
+<p>接下来我可能还会把他运用到我的各种脚本程序里去，What Fun!</p>
+<figure class="highlight plain"><figcaption><span>terminateProcess</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"> #!/bin/sh</span><br><span class="line"> # 根据名称杀进程</span><br><span class="line"> if [ $# -lt 1 ]</span><br><span class="line"> then</span><br><span class="line">   echo &quot;缺少参数：procedure_name&quot;</span><br><span class="line">   exit 1</span><br><span class="line"> fi</span><br><span class="line"> </span><br><span class="line"> PROCESS=`ps -ef|grep $1|grep -v grep|grep -v PPID|awk &apos;&#123; print $2&#125;&apos;`</span><br><span class="line">for i in $PROCESS</span><br><span class="line">do</span><br><span class="line">  echo &quot;Kill the $1 process [ $i ]&quot;</span><br><span class="line">  kill -9 $i</span><br><span class="line">done</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/05/31/第一个Shell脚本/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+      
+    </div>
+
+    <div>
+      
         
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
     <footer class="post-footer">
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/05/31/May30th/" itemprop="url">
-                  May30th
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-05-31T02:07:29+08:00" content="2016-05-31">
-              2016-05-31
-            </time>
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/Personal/" itemprop="url" rel="index">
-                    <span itemprop="name">Personal</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
+            <a href="/tags/Shell/" rel="tag">#Shell</a>
           
-
-          
-            
-          
-
-          
-
-          
-          
-
+            <a href="/tags/Workerman/" rel="tag">#Workerman</a>
           
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-          不得不说才两三天就发生了很多事情。但是，我的闲暇时间确实越来越少还是就简要地记录一下吧。
-我给我们体系结构小组的成员分配任务，让他们做。的确他们都做了，也都完成了。但是最后我看到成品等于没有做，对这件事我觉得自己有些恼怒，但更多的是觉得自己做的太不到位只是简单的安排下去认为所有人都会重视认为所有人都
-          ...
-
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/05/31/May30th/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/05/31/May30th/" rel="next" title="May30th">
+                <i class="fa fa-chevron-left"></i> May30th
+              </a>
+            
           </div>
-        
-      
-    </div>
 
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
+          <div class="post-nav-prev post-nav-item">
             
-            
-              
-                
-                <a class="post-title-link" href="/2016/05/31/May26th/" itemprop="url">
-                  May26th
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-05-31T02:07:29+08:00" content="2016-05-31">
-              2016-05-31
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/Personal/" itemprop="url" rel="index">
-                    <span itemprop="name">Personal</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
+          </div>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-          既然是第一篇，那应该写得认真一点。
-
-我必须得提高中我一直都觉得来到大学，比在高中的时候感觉自在很多。也几乎再也没有像高考时候他们信奉的那样认为考一个一本多好多好，二本会多遗憾之类。至少在这里，不会每天都要穿校服或是跑品字形的操，最多也就是一周开一个无关紧要的集体班会听听老师说说行业多严峻之类。
-然
-          ...
-
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/05/31/May26th/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -627,6 +422,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -646,8 +445,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            博客详情
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="http://o7mog9dny.bkt.clouddn.com/personalAvatar.png"
@@ -760,6 +568,17 @@
       </section>
 
       
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么突然会想到写Shell"><span class="nav-number">1.</span> <span class="nav-text">为什么突然会想到写Shell</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#重拾Workerman"><span class="nav-number">2.</span> <span class="nav-text">重拾Workerman</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
 
     </div>
   </aside>
@@ -855,6 +674,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
