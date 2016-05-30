@@ -116,7 +116,7 @@
 
 定期批量执行系统命令
 对文本或指令的输出">
-<meta property="og:updated_time" content="2016-05-30T18:13:32.000Z">
+<meta property="og:updated_time" content="2016-05-30T18:18:16.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="第一个Shell脚本">
 <meta name="twitter:description" content="为什么突然会想到写Shell其实，我在大二下学期开学的时候因为搬到了出租屋里住所以一个人就很有闲暇的时间，那个时候我就把兄弟连的Linxu基础全部看了一遍。（ 但是不得不说，当对软件的学习到达一个阶段以后再去通过看视频来学习，哪怕是入门都是一个效率极低的过程。 ）也就算是在那个时候真正的接触了Shell编程，我认为Shell有以下几种功能（为什么存在）：
@@ -299,7 +299,7 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-05-31T02:13:40+08:00" content="2016-05-31">
+            <time itemprop="dateCreated" datetime="2016-05-31T02:18:33+08:00" content="2016-05-31">
               2016-05-31
             </time>
           </span>
@@ -358,7 +358,7 @@
 <p>于是我想，我也可以在我的项目里写几个Shell来提高工作效率。</p>
 <h3 id="第一个，terminateProcess-1"><a href="#第一个，terminateProcess-1" class="headerlink" title="第一个，terminateProcess $1"></a>第一个，terminateProcess $1</h3><p>这个其实不是我写的，而是我百度到的。根据进程名杀进程，我想有了这个我再也不用去记那些查进程状态的命令和各种进程号了，:P 特别是在Xshell上Ctrl + V还粘贴不了得用别的快捷键。</p>
 <p>接下来我可能还会把他运用到我的各种脚本程序里去，What Fun!</p>
-<figure class="highlight plain"><figcaption><span>terminateProcess</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">#!/bin/sh</span><br><span class="line"># 根据名称杀进程</span><br><span class="line">if [ $# -lt 1 ]</span><br><span class="line">then</span><br><span class="line">  echo &quot;缺少参数：procedure_name&quot;</span><br><span class="line">  exit 1</span><br><span class="line">fi</span><br><span class="line">PROCESS=`ps -ef|grep $1|grep -v grep|grep -v PPID|awk &apos;&#123; print $2&#125;&apos;`</span><br><span class="line">for i in $PROCESS</span><br><span class="line">do</span><br><span class="line">	echo &quot;Kill the $1 process [ $i ]&quot;</span><br><span class="line"> kill -9 $i</span><br><span class="line">done</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"> #!/bin/sh</span><br><span class="line"> # 根据名称杀进程</span><br><span class="line"> if [ $# -lt 1 ]</span><br><span class="line"> then</span><br><span class="line">   echo &quot;缺少参数：procedure_name&quot;</span><br><span class="line">   exit 1</span><br><span class="line"> fi</span><br><span class="line"> PROCESS=`ps -ef|grep $1|grep -v grep|grep -v PPID|awk &apos;&#123; print $2&#125;&apos;`</span><br><span class="line"> for i in $PROCESS</span><br><span class="line"> do</span><br><span class="line"> 	echo &quot;Kill the $1 process [ $i ]&quot;</span><br><span class="line">kill -9 $i</span><br><span class="line"> done</span><br></pre></td></tr></table></figure>
 
       
     </div>
